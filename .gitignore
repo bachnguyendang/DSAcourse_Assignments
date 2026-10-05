@@ -1,2 +1,3 @@
 # ignore the hello world file
 # hello_world.cpp
+*.exe 
