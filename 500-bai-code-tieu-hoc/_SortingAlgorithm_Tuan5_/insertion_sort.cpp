@@ -1,8 +1,10 @@
 #include<stdio.h>
 int main(){
     int n;
+    printf("So luong phan tu của mang la: ");
     scanf("%d", &n);
     int before[n], after[n];
+    printf("Nhap cac phan tu cua mang: \n");
     for(int i = 0; i < n; i++){
         scanf("%d", &before[i]);
     }
@@ -17,9 +19,9 @@ int main(){
             }
             else break;
         }
-    }
-    for(int i = 0; i < n; i++){
-        printf("%d ", after[i]);
+        printf("\nSo so sanh: %4d | Array sau chen: ", before[i]);
+        for(int k = 0; k <= i; k++) printf("%3d ", after[k]);
+        for(int k = i + 1; k < n; k++) printf("%3d ", before[k]);
     }
     return 0;
 }
